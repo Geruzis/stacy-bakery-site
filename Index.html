@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stacy Bakery</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f9f6f2;
+    color:#333;
+}
+
+nav {
+    background:#6b4f3b;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a {
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+header {
+    background:url("Stacy_Bakery_Header_1920x600_overlay_compressed.jpg") center/cover no-repeat;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1 {
+    font-size:48px;
+    margin:0;
+}
+
+section {
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2 {
+    text-align:center;
+    margin-bottom:30px;
+    color:#6b4f3b;
+}
+
+.menu-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.menu-item {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+form {
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button {
+    background:#6b4f3b;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover {
+    background:#8a664c;
+}
+
+footer {
+    background:#6b4f3b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Начало</a>
+    <a href="#menu">Меню</a>
+    <a href="#order">Поръчай</a>
+    <a href="#about">Инфо за мен</a>
+</nav>
+
+<header id="home">
+    <h1>Stacy Bakery</h1>
+    <p>Домашни сладки и вкусотии</p>
+</header>
+
+<section id="menu">
+    <h2>Нашето Меню</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Торта с шоколад</h3>
+            <p>Домашна торта с белгийски шоколад</p>
+            <p><strong>45 лв.</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Френски макарони</h3>
+            <p>Кутия от 12 броя</p>
+            <p><strong>25 лв.</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Бисквити с конфитюр</h3>
+            <p>Домашни сладки с малинов пълнеж</p>
+            <p><strong>18 лв.</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="order">
+    <h2>Направи поръчка</h2>
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Вашето име" required>
+        <input type="email" placeholder="Имейл" required>
+        <input type="tel" placeholder="Телефон" required>
+        
+        <select required>
+            <option value="">Изберете продукт</option>
+            <option>Торта с шоколад</option>
+            <option>Френски макарони</option>
+            <option>Бисквити с конфитюр</option>
+        </select>
+
+        <textarea rows="4" placeholder="Допълнителни изисквания"></textarea>
+        
+        <button type="submit">Изпрати поръчка</button>
+    </form>
+</section>
+
+<section id="about">
+    <h2>Инфо за мен</h2>
+    <p>
+        Здравейте! Аз съм Стефани – създателката на Stacy Bakery.
+        Обичам да създавам домашни сладки с внимание към детайла
+        и истински вкус. Всичко се приготвя с любов и качествени продукти.
+    </p>
+</section>
+
+<footer>
+    © 2026 Stacy Bakery | Всички права запазени
+</footer>
+
+<script>
+function submitForm(event) {
+    event.preventDefault();
+    alert("Благодарим за поръчката! Ще се свържем с Вас скоро.");
+}
+</script>
+
+</body>
+</html>
