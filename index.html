@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stacy Bakery</title>
 
   <style>
@@ -28,12 +28,6 @@
       font-weight: bold;
     }
 
-    header img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
     section {
       padding: 60px 20px;
       max-width: 1000px;
@@ -55,12 +49,117 @@
     .menu-item {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
       text-align: center;
     }
 
     .menu-item img {
       width: 100%;
       height: 260px;
-      object-fit: cov
+      object-fit: cover;
+    }
+
+    .price-list {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .price-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .price-list li:last-child {
+      border-bottom: none;
+    }
+
+    .price-list span {
+      font-weight: bold;
+      color: #6b4f3b;
+    }
+
+    footer {
+      background: #6b4f3b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">Начало</a>
+  <a href="#menu">Меню</a>
+  <a href="#order">Поръчай</a>
+  <a href="#about">Инфо за мен</a>
+</nav>
+
+<header id="home">
+  <img src="Stacy_Bakery_Header_1920x600_overlay_compressed.png" alt="Stacy Bakery">
+</header>
+
+<section id="menu">
+  <h2>Нашето Меню</h2>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="cinnamon.jpg" alt="Канелени бисквити">
+      <ul class="price-list">
+        <li><span>2€</span> 3 броя</li>
+        <li><span>3€</span> 5 броя</li>
+        <li><span>5€</span> 10 броя</li>
+        <li><span>9€</span> 20 броя</li>
+      </ul>
+    </div>
+
+    <div class="menu-item">
+      <img src="orient.jpg" alt="Сладка ориенталска целувка">
+      <ul class="price-list">
+        <li><span>4€</span> 5 броя</li>
+        <li><span>7€</span> 10 броя</li>
+        <li><span>13€</span> 20 броя</li>
+        <li><span>18€</span> 30 броя</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="order">
+  <h2>Направи поръчка</h2>
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSdvj-CGh7_XTBFWD6Ei7HN-byAHPma0bQpaPekKOwP996XoQw/viewform?embedded=true"
+    width="100%"
+    height="1200"
+    frameborder="0">
+  </iframe>
+</section>
+
+<section id="about">
+  <h2>Инфо за мен</h2>
+  <p>
+    Здравейте! Аз съм Стефани – създателката на Stacy Bakery.
+    Всичко се приготвя с любов и качествени продукти.
+  </p>
+</section>
+
+<footer>
+  © 2026 Stacy Bakery | Всички права запазени
+</footer>
+
+</body>
+</html>
