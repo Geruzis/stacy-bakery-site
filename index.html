@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stacy Bakery</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -38,57 +38,11 @@ nav a {
   font-weight: 500;
 }
 
-/* ================= HERO SECTION ================= */
+/* ================= HEADER ================= */
 
-.hero {
-  height: 450px;
-  background: url("Stacy_Bakery_Header_1920x600_overlay_compressed.png") center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.hero-content {
-  position: relative;
-  color: white;
-  text-align: center;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.hero-btn {
-  background: #6b4f3b;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  transition: 0.3s ease;
-}
-
-.hero-btn:hover {
-  background: #8a664c;
-  transform: translateY(-3px);
+header img {
+  width: 100%;
+  display: block;
 }
 
 /* ================= SECTIONS ================= */
@@ -190,31 +144,9 @@ h2 {
   color: #444;
 }
 
-/* ================= FOOTER ================= */
-
-footer {
-  background: #6b4f3b;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-
 /* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
-
-  .hero {
-    height: 300px;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
 
   .menu-grid {
     grid-template-columns: 1fr;
@@ -241,12 +173,8 @@ footer {
   <a href="#about">Инфо за мен</a>
 </nav>
 
-<header class="hero" id="home">
-  <div class="hero-content">
-    <h1>Stacy Bakery</h1>
-    <p>Домашни сладки, създадени с любов и внимание към всеки детайл</p>
-    <a href="#menu" class="hero-btn">Поръчай сега</a>
-  </div>
+<header id="home">
+  <img src="Stacy_Bakery_Header_1920x600_overlay_compressed.png" alt="Stacy Bakery">
 </header>
 
 <section id="menu">
