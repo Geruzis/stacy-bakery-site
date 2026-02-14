@@ -1,270 +1,66 @@
 <!doctype html>
 <html lang="bg">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Stacy Bakery</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stacy Bakery</title>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f9f6f2;
-        color: #333;
-      }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f6f2;
+      color: #333;
+    }
 
-      nav {
-        background: #6b4f3b;
-        padding: 15px;
-        text-align: center;
-        position: sticky;
-        top: 0;
-      }
+    nav {
+      background: #6b4f3b;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
 
-      nav a {
-        color: white;
-        margin: 0 20px;
-        text-decoration: none;
-        font-weight: bold;
-      }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-      nav a:hover {
-        text-decoration: underline;
-      }
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-      header {
-        /* background: url('Stacy_Bakery_Header_1920x600_overlay_compressed.png') */
-        /* center/cover no-repeat; */
-        color: white;
-        text-align: center;
-        padding: 0px 20px;
-        position: relative;
-      }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-      header h1 {
-        font-size: 48px;
-        margin: 0;
-        display: none;
-      }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #6b4f3b;
+    }
 
-      section {
-        padding: 60px 20px;
-        max-width: 1000px;
-        margin: auto;
-      }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
 
-      h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #6b4f3b;
-      }
+    .menu-item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 20px;
+      text-align: center;
+    }
 
-      .menu-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-      }
-
-     .menu-item {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Hover ефект */
-.menu-item:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-}
-
-
-      form {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      input,
-      textarea,
-      select {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-
-      button {
-        background: #6b4f3b;
-        color: white;
-        padding: 12px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-      }
-
-      button:hover {
-        background: #8a664c;
-      }
-
-      footer {
-        background: #6b4f3b;
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }
-      .menu-img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-/* Леко zoom при hover */
-.menu-item:hover .menu-img {
-  transform: scale(1.05);
-}
-
-.price-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.price-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.price-list span {
-  font-weight: bold;
-  color: #6b4f3b;
-}
-
-    </style>
-  </head>
-
-  <body>
-    <nav>
-      <a href="#home">Начало</a>
-      <a href="#menu">Меню</a>
-      <a href="#order">Поръчай</a>
-      <a href="#about">Инфо за мен</a>
-    </nav>
-
-    <header id="home">
-      <h1>Stacy Bakery</h1>
-      <!-- <p>Домашни сладки и вкусотии</p> -->
-      <div style="margin-inline: -20px">
-        <img
-          src="Stacy_Bakery_Header_1920x600_overlay_compressed.png"
-          alt="Stacy Bakery Header"
-          style="width: 100%; height: auto"
-        />
-      </div>
-    </header>
-
-    <section id="menu">
-      <h2>Нашето Меню</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-  <img src="cinnamon.jpg" alt="Канелени бисквити" class="menu-img">
-
-  <h3>Канелени бисквити</h3>
-
-  <ul class="price-list">
-    <li><span>2€</span> 3 броя</li>
-    <li><span>3€</span> 5 броя</li>
-    <li><span>5€</span> 10 броя</li>
-    <li><span>9€</span> 20 броя</li>
-  </ul>
-</div>
-
-        
-        <div class="menu-item">
-  <img src="orient.jpg" alt="Сладка ориенталска целувка" class="menu-img">
-
-  <h3>„Сладка ориенталска целувка“</h3>
-
-  <ul class="price-list">
-    <li><span>4€</span> 5 броя</li>
-    <li><span>7€</span> 10 броя</li>
-    <li><span>13€</span> 20 броя</li>
-    <li><span>18€</span> 30 броя</li>
-  </ul>
-</div>
-
-
-    <section id="order">
-      <h2>Направи поръчка</h2>
-      <!-- <form onsubmit="submitForm(event)">
-        <input
-          type="text"
-          placeholder="Вашето име"
-          required
-        />
-        <input
-          type="email"
-          placeholder="Имейл"
-          required
-        />
-        <input
-          type="tel"
-          placeholder="Телефон"
-          required
-        />
-
-        <select required>
-          <option value="">Изберете продукт</option>
-          <option>Торта с шоколад</option>
-          <option>Френски макарони</option>
-          <option>Бисквити с конфитюр</option>
-        </select>
-
-        <textarea
-          rows="4"
-          placeholder="Допълнителни изисквания"
-        ></textarea>
-
-        <button type="submit">Изпрати поръчка</button>
-      </form> -->
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdvj-CGh7_XTBFWD6Ei7HN-byAHPma0bQpaPekKOwP996XoQw/viewform?embedded=true"
-        width="100%"
-        height="2400px"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        >Loading…</iframe
-      >
-    </section>
-
-    <section id="about">
-      <h2>Инфо за мен</h2>
-      <p>
-        Здравейте! Аз съм Стефани – създателката на Stacy Bakery. Обичам да
-        създавам домашни сладки с внимание към детайла и истински вкус. Всичко
-        се приготвя с любов и качествени продукти.
-      </p>
-    </section>
-
-    <footer>© 2026 Stacy Bakery | Всички права запазени</footer>
-
-    <!-- <script>
-      function submitForm(event) {
-        event.preventDefault()
-        alert('Благодарим за поръчката! Ще се свържем с Вас скоро.')
-      }
-    </script> -->
-  </body>
-</html>
+    .menu-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cov
