@@ -28,6 +28,12 @@
       font-weight: bold;
     }
 
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     section {
       padding: 60px 20px;
       max-width: 1000px;
@@ -52,6 +58,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       overflow: hidden;
       text-align: center;
+      padding-bottom: 20px;
     }
 
     .menu-item img {
@@ -60,9 +67,16 @@
       object-fit: cover;
     }
 
+    .menu-item h3 {
+      margin: 20px 0 10px;
+      font-size: 22px;
+      color: #6b4f3b;
+      letter-spacing: 0.5px;
+    }
+
     .price-list {
       list-style: none;
-      padding: 20px;
+      padding: 0 25px;
       margin: 0;
     }
 
@@ -71,6 +85,7 @@
       justify-content: space-between;
       padding: 8px 0;
       border-bottom: 1px solid #eee;
+      font-size: 16px;
     }
 
     .price-list li:last-child {
@@ -88,12 +103,6 @@
       text-align: center;
       padding: 20px;
       margin-top: 40px;
-    }
-
-    header img {
-      width: 100%;
-      height: auto;
-      display: block;
     }
   </style>
 </head>
@@ -118,6 +127,7 @@
 
     <div class="menu-item">
       <img src="cinnamon.jpg" alt="Канелени бисквити">
+      <h3>Канелени бисквити</h3>
       <ul class="price-list">
         <li><span>2€</span> 3 броя</li>
         <li><span>3€</span> 5 броя</li>
@@ -128,6 +138,7 @@
 
     <div class="menu-item">
       <img src="orient.jpg" alt="Сладка ориенталска целувка">
+      <h3>„Сладка ориенталска целувка“</h3>
       <ul class="price-list">
         <li><span>4€</span> 5 броя</li>
         <li><span>7€</span> 10 броя</li>
