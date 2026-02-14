@@ -40,8 +40,14 @@ nav a {
 
 /* ================= HEADER ================= */
 
+header {
+  overflow: hidden;
+}
+
 header img {
   width: 100%;
+  height: 420px;      /* Desktop височина */
+  object-fit: cover;
   display: block;
 }
 
@@ -147,6 +153,10 @@ h2 {
 /* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
+
+  header img {
+    height: 220px;   /* Mobile височина */
+  }
 
   .menu-grid {
     grid-template-columns: 1fr;
